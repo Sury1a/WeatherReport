@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.full{
+    background-color: #07817bea;
+    background-image: url(https://wallpaper.dog/large/20530634.jpg) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.container{
+    width: 500px;
+    height: 90vh;
+    background-color:#0c6d74ed ;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+.upper-data {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 45%;
+    left: 25px;
+    
+    border-top-left-radius: 30px;
+    border-top-right-radius:30px ;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+
+}
+
+.lower-data{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.upper-data img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 3;
+    width: 90%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.weather-data{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.location{
+    color :  #FFF;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+.temperature{
+    color :  #FFF;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 900;
+
+}
+.more-info-label{
+    color:  #FFF;
+
+}
+.more-info-container{
+    flex: 1;
+    background-color:rgba(255,255,255,0.1) ;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.info-block{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+.info-block-label{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.info-block-label img{
+    width: 1em;
+
+
+}.info-block-label span{
+    color: beige;
+    font-size: 0.8em;
+}
+
+.info-block-value{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color:  #FFF;
+}
+
+.full .container .search{
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+}
+
+.search input{
+    background-color:rgba(194, 189, 189, 0.966) ;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+    color : rgba(12, 0, 0, 0.958);
+    font-size: 0.8em;
+    text-align: center;
+}
+
+
+

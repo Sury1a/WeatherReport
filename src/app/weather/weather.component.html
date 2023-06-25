@@ -1,0 +1,140 @@
+
+
+
+ 
+
+<div class="full">
+    
+    
+
+
+ <div class="container" >
+    <div class="search">
+        <form (ngSubmit)="onSearch()">
+           <input type="text"  [(ngModel)]="city" name="city" placeholder="Search City "  >
+           
+        </form>
+        </div>
+ 
+    <div class="upper-data">
+        <img src="../assets/hot.jpg" *ngIf="temparature > 15">
+        <img src="../assets/cold.png" *ngIf="temparature <= 15">
+
+        <div class="weather-data">
+            <div class="location">
+                <h1>{{city}}</h1></div>
+            <div class="temperature ">{{temparature}}°C</div>
+        </div>
+    </div>
+    <div class="lower-data">
+        <div class="more-info-label">
+            More Details
+        </div>
+        <div class="more-info-container">
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="../assets/min.jpeg" >
+                    <span>min</span>
+                </div>
+                <div class="info-block-value">
+                    {{tempmin}}°C
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="../assets/max.png" >
+                    <span>max</span>
+                </div>
+                <div class="info-block-value">
+                    {{tempmax}}°C
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="../assets/humidity.jpg" >
+                    <span>humidity</span>
+                </div>
+                <div class="info-block-value">
+                    {{humidity}}%
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="../assets/wind.png" >
+                    <span>Wind</span>
+                </div>
+                <div class="info-block-value">
+                    {{wind}}km/h
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+ </div>
+</div>
+
+
+
+<!-- <div class="container" >
+    <div class="upper-data">
+        <img src="../assets/hot.jpg" *ngIf="14> 15">
+        <img src="../assets/cold.jpeg" *ngIf="14 <= 15">
+
+        <div class="weather-data">
+            <div class="location">Chennai</div>
+            <div class="temperature ">{{15 |number: '1.0-0'}}°C</div>
+        </div>
+    </div>
+    <div class="lower-data">
+        <div class="more-info-label">
+            More Information
+        </div>
+        <div class="more-info-container">
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="../assets/min.jpeg" >
+                    <span>min</span>
+                </div>
+                <div class="info-block-value">
+                    10°C
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="../assets/max.png" >
+                    <span>max</span>
+                </div>
+                <div class="info-block-value">
+                    20°C
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="../assets/humidity.jpg" >
+                    <span>humidity</span>
+                </div>
+                <div class="info-block-value">
+                    80%
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="../assets/wind.png" >
+                    <span>Pressure</span>
+                </div>
+                <div class="info-block-value">
+                    80
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div> -->
